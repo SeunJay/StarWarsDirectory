@@ -1,0 +1,43 @@
+.main {
+  width: 50%;
+  margin: 50px auto;
+}
+
+.search-bar-width {
+  width: 450px !important;
+}
+@media (max-width: 480px){
+  .search-bar-width {
+    width: 250px !important;
+  }
+}
+
+.has-search .form-control {
+  padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: #aaa;
+} 
+
+ .search input{
+width: 480px;
+
+} 
+
+.search .fa-search {
+  color:rgb(73, 73, 86);
+  position: absolute;
+  top: 17px !important;
+  left: 13px;
+  font-size: 22px;
+}
+

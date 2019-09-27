@@ -16,8 +16,8 @@ const PopularCharacters = (props) => {
         }}
         className="topic-tag"
       >
-        <h3 style={{ marginBottom: "0px", color: "#4c4c58" }}>
-          {props.subject}
+        <h3 style={{ marginBottom: "0px", color: "#4c4c58", marginTop: "55px" }}>
+          {props.title}
         </h3>
         <Underline width="3.5em" marginTop="5px" height="5px" background="#494956" />
       </div>

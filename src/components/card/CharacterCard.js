@@ -1,11 +1,14 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
 
-const CharacterCard = () => {
-  return (
-    <div>
-      
-    </div>
-  )
+function getId(props) {
+  if (!props.url) return "";
+  const splitPropsUrl = props.url.split("/");
+  return splitPropsUrl[5];
 }
 
-export default CharacterCard
+const CharacterCard = props => {
+  return <div></div>;
+};
+
+export default CharacterCard;

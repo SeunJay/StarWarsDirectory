@@ -13,7 +13,7 @@ const Banner = (props) => {
           <img
             src={logo}
             alt="logo"
-            className="stars-wars-logo ml-lg-5 mt-5 logo"
+            className="stars-wars-logo ml-lg-5 mt-5 logo special-logo"
           />
         </Link>
 

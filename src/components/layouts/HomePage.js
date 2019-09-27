@@ -10,7 +10,7 @@ const HomePage = () => {
       <Banner />
       <PopularShips title="Popular Ships" />
       <StarShips />
-      <ViewMore />
+      <ViewMore page="starship"/>
     </div>
   );
 };

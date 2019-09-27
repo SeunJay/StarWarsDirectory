@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
-import ViewMore from "../viewmore/ViewMore"
+import ViewMore from "../viewmore/ViewMore";
+import ReadMorepage from "../readmore/ReadMorePage";
+import {characters} from "../readmore/ReadMorePage";
 import axios from "axios";
 
 const ReadMoreCharacters = ({ match }) => {
@@ -13,8 +15,10 @@ const ReadMoreCharacters = ({ match }) => {
       })
       .catch(err => console.log(err));
   }, []);
+
   return (
     <>
+    <ReadMorepage page={characters} name={character.name}/>
       <div className="container">
         <div className="d-flex flex-column container">
           <h1 className="pt-5 pb-4">{character.name}</h1>

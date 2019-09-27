@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import ViewMore from "../viewmore/ViewMore";
 import ReadMorepage from "../readmore/ReadMorePage";
-import {characters} from "../readmore/ReadMorePage";
+import { characters } from "../readmore/ReadMorePage";
 import axios from "axios";
 
 const ReadMoreCharacters = ({ match }) => {
-  const [character, setCharacter] = useState({});
-  const characterId = match.url.split("/")[1];
+  const [character, setCharacter] = useState("");
+  const characterId = match.params.id
   useEffect(() => {
     axios
       .get(`https://swapi.co/api/people/${characterId}/`)
@@ -18,7 +18,7 @@ const ReadMoreCharacters = ({ match }) => {
 
   return (
     <>
-    <ReadMorepage page={characters} name={character.name}/>
+      <ReadMorepage page={characters} name={character.name} />
       <div className="container">
         <div className="d-flex flex-column container">
           <h1 className="pt-5 pb-4">{character.name}</h1>

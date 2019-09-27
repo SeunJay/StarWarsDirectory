@@ -7,6 +7,15 @@
   height: 70px;
   margin: 15px;
 }
+
+.special-logo {
+  display: inline-block;
+  width: 7%;
+  height: 7%;
+  margin-top: 30%
+}
+
+
 .logo-directory {
   display: flex;
   margin-bottom: -5px;

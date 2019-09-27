@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import HomePage from "./components/layouts/HomePage";
 import ReadMoreCharacters from "./components/readmore/ReadMoreCharacters"
 import ReadMorePlanets from "./components/readmore/ReadMorePlanets"
-import ReadMoreShips from "./components/readmore/ReadMoreShips"
+import ReadMoreShips from "./components/readmore/ReadMoreShips";
+import StarsShipPage from "./components/starshippage/StarshipPage"
 import './App.css';
 
 
@@ -13,6 +14,7 @@ function App() {
       <div className="App">
         <Switch>
           <Route exact path="/" component={HomePage}/>
+          <Route exact path="/starship" component={StarsShipPage}/>
           <Route exact path="/people/:id" component={ReadMoreCharacters}/>
           <Route exact path="/planets/:id" component={ReadMorePlanets}/>
           <Route exact path="/starships/:id" component={ReadMoreShips}/>

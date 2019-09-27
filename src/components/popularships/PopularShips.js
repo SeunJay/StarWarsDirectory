@@ -16,8 +16,10 @@ const PopularShips = props => {
         }}
         className="topic-tag"
       >
-        <h3 style={{ marginBottom: "0px", color: "#4c4c58" }}>
-          {props.subject}
+        <h3
+          style={{ marginBottom: "0px", color: "#4c4c58", marginTop: "35px" }}
+        >
+          {props.title}
         </h3>
         <Underline
           width="3.5em"

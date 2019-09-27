@@ -1,0 +1,41 @@
+.card {
+  width: 338px;
+  margin: 10px;
+}
+
+.card-body {
+  background: #f2f2f2;
+  color: #777780;
+
+}
+
+.btn {
+  color: #808089;
+  background-color: #d8d8d8;
+  border-color: #d8d8d8;
+}
+
+.people {
+  flex-direction: row;
+}
+
+.people h4 {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #494956;
+}
+
+.people h5 {
+  font-style: italic;
+}
+
+.people p {
+  margin-top: 2em;
+  width: 210px;
+}
+
+.character-readmore-tag{
+  color:#494956;
+  font-weight: bold;
+}
+

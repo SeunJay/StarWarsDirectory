@@ -30,3 +30,41 @@
 align-items: center;
 
 }
+
+
+
+.header-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 350px;
+  justify-content: flex-start;
+}
+
+.local {
+  text-align: center;
+  font-weight: 300;
+  color: rgb(145, 145, 145);
+  font-weight: 400;
+  font-size: 1.3em;
+  display: flex;
+  flex-wrap: wrap;
+  width: 430px;
+  max-width:100%;
+}
+
+
+
+.topic-underline {
+  margin: auto;
+  border-bottom: 4px solid purple;
+  width: 100px;
+}
+
+
+@media (max-width: 576px){
+
+  .logo {
+      display: none!important;
+  }
+}

@@ -15,6 +15,7 @@ const HomePage = () => {
       <ViewMore page="starship" />
       <PopularCharacters title="Popular Characters" />
       <Characters />
+      <ViewMore page="characters" />
     </div>
   );
 };

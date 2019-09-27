@@ -1,0 +1,49 @@
+@media only screen and (min-width: 1600px) {
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .carousel-item{
+    height:800px;
+  }
+
+  .carousel-item img{
+    object-fit:"cover";
+    width:1100;
+     height:500;
+  }
+  .carousel-caption img {
+    position: absolute;
+    bottom: 630px;
+    right: 1200px;
+    height: 70px;
+    width: 125px;
+  }
+
+  .carousel-caption p {
+    bottom: 13rem;
+    margin-bottom: 13rem;
+    margin-right: 1045px;
+    font-size: 18px;
+  }
+
+  .carousel-caption span{
+    font-size: 30px;
+  }
+
+  .hello-rukee {
+    height: 550px;
+  }
+
+  .previous {
+    position: absolute;
+    left: 1500px;
+    top: 422px;
+  }
+
+  .next {
+    position: absolute;
+    top: 422px;
+  }
+}

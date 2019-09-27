@@ -1,0 +1,16 @@
+.starship-flex {
+  justify-content: space-around;
+  flex-flow: row wrap;
+  width: 70%;
+  margin: auto;
+}
+
+@media (max-width: 480px) {
+  .starship-flex {
+    justify-content: space-around;
+    flex-flow: row wrap;
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+  }
+}

@@ -26,7 +26,19 @@ const ReadMorePage = props => {
         </ul>
         <div className="carousel-inner hello-rukee">
           <div className="carousel-item active">
-            <img src={props.page[0]} alt="Los Angeles" className="img-fluid" />
+            <img
+              src={props.page[0]}
+              alt="Los Angeles"
+              className="img-fluid"
+              style={{
+                backgroundPosition: "center",
+                backgroundSize: "800px 600px, cover",
+                backgroundRepeat: "no-repeat",
+                width: "100%",
+                height: "630px",
+                padding: "0px"
+              }}
+            />
             <div className="carousel-caption">
               <Link to="/">
                 {" "}
@@ -40,7 +52,19 @@ const ReadMorePage = props => {
             </div>
           </div>
           <div className="carousel-item">
-            <img src={props.page[1]} alt="Chicago" className="img-fluid" />
+            <img
+              src={props.page[1]}
+              alt="Chicago"
+              className="img-fluid"
+              style={{
+                backgroundPosition: "center",
+                backgroundSize: "800px 600px, cover",
+                backgroundRepeat: "no-repeat",
+                width: "100%",
+                height: "590px",
+                padding: "0px"
+              }}
+            />
             <div className="carousel-caption">
               <Link to="/">
                 {" "}
@@ -54,7 +78,19 @@ const ReadMorePage = props => {
             </div>
           </div>
           <div className="carousel-item">
-            <img src={props.page[2]} alt="New York" className="img-fluid" />
+            <img
+              src={props.page[2]}
+              alt="New York"
+              className="img-fluid"
+              style={{
+                backgroundPosition: "center",
+                backgroundSize: "800px 600px, cover",
+                backgroundRepeat: "no-repeat",
+                width: "100%",
+                height: "630px",
+                padding: "0px"
+              }}
+            />
             <div className="carousel-caption">
               <Link to="/">
                 {" "}

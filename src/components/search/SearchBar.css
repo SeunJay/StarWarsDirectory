@@ -4,12 +4,7 @@
 }
 
 .search-bar-width {
-  width: 450px !important;
-}
-@media (max-width: 480px){
-  .search-bar-width {
-    width: 250px !important;
-  }
+  width: 650px !important;
 }
 
 .has-search .form-control {
@@ -26,18 +21,22 @@
   text-align: center;
   pointer-events: none;
   color: #aaa;
-} 
+}
 
- .search input{
-width: 480px;
-
-} 
+.search input {
+  width: 480px;
+}
 
 .search .fa-search {
-  color:rgb(73, 73, 86);
+  color: rgb(73, 73, 86);
   position: absolute;
   top: 17px !important;
   left: 13px;
   font-size: 22px;
 }
 
+@media (max-width: 480px) {
+  .search-bar-width {
+    width: 250px !important;
+  }
+}

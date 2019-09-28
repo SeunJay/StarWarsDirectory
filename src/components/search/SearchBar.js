@@ -9,7 +9,8 @@ const SearchBar = () => {
         className="p-2 rounded search-bar-width"
         placeholder="Enter Search Term"
         id="search-bar"
-        onChange={e => (e.target.value)}
+        onChange={e => e.target.value}
+        style={{display: "block", width: "100%" }}
       />
     </div>
   );

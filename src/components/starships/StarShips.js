@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from "react";
 import starship1 from "../../assests/starship-1.jpg";
 import starship2 from "../../assests/starship-2.jpg";
 import starship3 from "../../assests/starship-3.jpg";
@@ -6,10 +6,9 @@ import starship4 from "../../assests/starship-4.jpg";
 import starship5 from "../../assests/starship-5.jpg";
 import starship6 from "../../assests/starship-6.jpg";
 import "./StarShips.css";
-//import Spinner from "../layouts/spinner.gif";
+import Spinner from "../spinner/Spinner";
 import Cards from "../card/Cards";
 import axios from "axios";
-
 
 const starshipPhotos = [
   starship1,
@@ -39,9 +38,9 @@ const StarShips = () => {
         console.log(err);
       });
   }, []);
-  console.log(starships)
+  console.log(starships);
   console.log(typeof starships);
-  if (loading) return "No results";
+  if (loading) return <Spinner />;
 
   if (!starships) return "";
   return (
@@ -65,6 +64,6 @@ const StarShips = () => {
       </div>
     </>
   );
-}
+};
 
-export default StarShips
+export default StarShips;

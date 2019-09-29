@@ -10,7 +10,7 @@ import Characters from "../characters/Characters";
 const HomePage = () => {
   return (
     <div>
-      <Banner />
+      <Banner page="homepage"/>
       <PopularShips title="Popular Ships" />
       <StarShips />
       <ViewMore page="starship" />

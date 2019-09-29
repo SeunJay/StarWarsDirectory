@@ -23,8 +23,7 @@ const Characters = () => {
       })
       .catch(err => console.log(err));
   }, []);
-  console.log(characters);
-  console.log(typeof characters);
+  
   return (
     <section className="d-flex !important justify-content-center w-sm-75 w-75 m-auto flex-wrap ">
       {characters.map((character, index) => {

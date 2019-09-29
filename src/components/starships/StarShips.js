@@ -26,7 +26,6 @@ const StarShips = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    //setLoading(true);
     axios
       .get("https://swapi.co/api/starships/")
       .then(res => {

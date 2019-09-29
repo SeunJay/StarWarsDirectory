@@ -38,8 +38,7 @@ const StarShips = () => {
         console.log(err);
       });
   }, []);
-  console.log(starships);
-  console.log(typeof starships);
+  
   if (loading) return <Spinner />;
 
   if (!starships) return "";

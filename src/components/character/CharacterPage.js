@@ -32,12 +32,12 @@ const CharacterPage = () => {
 
   useEffect(() => {
     axios
-      .get("https://swapi.co/api/people")
-      .then(res => {
+      .get("https://cors-anywhere.herokuapp.com/https://swapi.dev/api/people")
+      .then((res) => {
         setCharacters(res.data.results);
         setFilteredCharacters(res.data.results);
       })
-      .catch(err => console.log(err));
+      .catch((err) => console.log(err));
   }, []);
   return (
     <>

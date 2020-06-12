@@ -1,24 +1,21 @@
-import React from 'react';
-import "./SelectInput.css"
+import React from "react";
+import "./SelectInput.css";
 
 const SelectInput = (props) => {
   return (
-    <div
-      style={{ width: "200px", textAlign: "left" }}
-      className=""
-    >
+    <div style={{ width: "200px", textAlign: "left" }} className="">
       <div className="flex-container">
         <h5
           style={{
             color: "rgb(76, 76, 88)",
             marginRight: "20px",
-            marginTop: "9px"
+            marginTop: "9px",
           }}
         >
           FILTER
         </h5>
         <select
-          class="custom-select"
+          className="custom-select"
           style={{ marginRight: "auto" }}
           onChange={props.onChange}
         >
@@ -30,6 +27,6 @@ const SelectInput = (props) => {
       </div>
     </div>
   );
-}
+};
 
-export default SelectInput
+export default SelectInput;

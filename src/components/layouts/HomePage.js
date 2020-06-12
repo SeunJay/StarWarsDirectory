@@ -16,7 +16,7 @@ const HomePage = () => {
       <ViewMore page="starship" />
       <br></br>
       <br></br>
-      <div class="container" style={{ color: "white" }}>
+      <div className="container" style={{ color: "white" }}>
         {" "}
         <CardCarousel />
       </div>

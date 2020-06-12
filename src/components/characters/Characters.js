@@ -16,12 +16,12 @@ const Characters = () => {
   const [characters, setCharacters] = useState([]);
 
   useEffect(() => {
-    axios("https://swapi.co/api/people/")
-      .then(res => {
+    axios("https://cors-anywhere.herokuapp.com/https://swapi.dev/api/people/")
+      .then((res) => {
         const characters = res.data.results.slice(0, 4);
         setCharacters(characters);
       })
-      .catch(err => console.log(err));
+      .catch((err) => console.log(err));
   }, []);
   
   return (

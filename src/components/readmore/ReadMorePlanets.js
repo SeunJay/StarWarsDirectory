@@ -9,11 +9,13 @@ const ReadMorePlanets = ({ match }) => {
   const planetId = match.params.id;
   useEffect(() => {
     axios
-      .get(`https://swapi.co/api/planets/${planetId}/`)
-      .then(res => {
+      .get(
+        `https://cors-anywhere.herokuapp.com/https://swapi.dev/api/planets/${planetId}/`
+      )
+      .then((res) => {
         setPlanet(res.data);
       })
-      .catch(err => console.log(err));
+      .catch((err) => console.log(err));
   }, []);
   return (
     <>

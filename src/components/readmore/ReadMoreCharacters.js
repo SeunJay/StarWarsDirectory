@@ -9,11 +9,13 @@ const ReadMoreCharacters = ({ match }) => {
   const characterId = match.params.id
   useEffect(() => {
     axios
-      .get(`https://swapi.co/api/people/${characterId}/`)
-      .then(res => {
+      .get(
+        `https://cors-anywhere.herokuapp.com/https://swapi.dev/api/people/${characterId}/`
+      )
+      .then((res) => {
         setCharacter(res.data);
       })
-      .catch(err => console.log(err));
+      .catch((err) => console.log(err));
   }, []);
 
   return (

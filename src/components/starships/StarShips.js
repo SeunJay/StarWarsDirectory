@@ -27,13 +27,15 @@ const StarShips = () => {
 
   useEffect(() => {
     axios
-      .get("https://swapi.co/api/starships/")
-      .then(res => {
+      .get(
+        "https://cors-anywhere.herokuapp.com/https://swapi.dev/api/starships/"
+      )
+      .then((res) => {
         const ships = res.data.results.slice(0, 6);
         setLoading(false);
         setStarships(ships);
       })
-      .catch(err => {
+      .catch((err) => {
         console.log(err);
       });
   }, []);

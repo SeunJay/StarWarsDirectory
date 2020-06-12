@@ -11,11 +11,13 @@ const ReadMoreShips = ({ match }) => {
 
   useEffect(() => {
     axios
-      .get(`https://swapi.co/api/${searchItem}/${shipId}/`)
-      .then(res => {
+      .get(
+        `https://cors-anywhere.herokuapp.com/https://swapi.dev/api/${searchItem}/${shipId}/`
+      )
+      .then((res) => {
         setShip(res.data);
       })
-      .catch(err => console.log(err));
+      .catch((err) => console.log(err));
   }, []);
 
   return (
